@@ -14,6 +14,7 @@
     --background-modifier-cover: rgba(0, 0, 0, 0.6);
     --markdown-format-color: rgba(255,255,255,.3);
     --sidebar-icon-color: #cecece;
+    --sidevar-right-background: #383838;
     --text-accent: rgb(242, 109, 109);
     --text-accent-hover: rgb(242, 109, 109);
     --text-normal: rgb(241, 244, 244);
@@ -39,6 +40,9 @@
     --divider-border: rgb(0, 0, 0);
     --blockquote-back: rgba(255, 255, 255, .2);
     --blockquote-border: rgba(255, 255, 255, .5);
+    --internal-link-background: #22394e;
+    --internal-link-border: #3169a3;
+    --link-color: #82b8f3;
 }
 
 .theme-light {
@@ -58,6 +62,8 @@
     --background-modifier-cover: rgba(0, 0, 0, 0.8);
     --markdown-format-color: rgba(0,0,0,.3);
     --sidebar-icon-color: #5b5b5b;
+    --sidevar-right-background: #f0f0f0;
+    --sidebar-right-border: #ececec;
     --text-accent: #ef5d5d;
     --text-accent-hover: #e66a6a;
     --text-normal: #2e3338;
@@ -83,6 +89,10 @@
     --divider-border: rgb(235, 226, 228);
     --blockquote-back: rgba(0, 0, 0, .03);
     --blockquote-border: rgba(0, 0, 0, .06);
+    --internal-link-background: #eef6ff;
+    --internal-link-border: #bcdbff;
+    --link-color: #1170dc;
+
 }
 
 
@@ -429,7 +439,7 @@ a{
     font-size: 1rem !important;
 }
 .cm-strong,.cm-hmd-internal-link,.cm-formatting-link,.cm-formatting-quote,.cm-quote,.cm-link,.cm-url{
-    color: #1170dc !important;
+    color: var(--link-color) !important;
 }
 .cm-formatting-header{
     color:var(--markdown-format-color);
@@ -449,11 +459,11 @@ a{
 }
 .cm-hmd-internal-link{
     color: #1170dc;
-    border: 1px solid #bcdbff;
+    border: 1px solid var(--internal-link-border);
     border-radius: 3px;
     margin: 4px;
     padding: 1px 2px;
-    background: #eef6ff;
+    background: var(--internal-link-background);
 }
 .cm-hmd-codeblock{
     color: #238c9f !important;
@@ -466,7 +476,7 @@ a{
     font-weight: 500 !important;
 }
 .nav-action-button,.side-dock-ribbon-action,.view-action,.status-bar-item{
-    color: var(--sidebar-icon-color);
+    color: var(--sidebar-icon-color) !important;
 }
 .view-header:not(:hover) .view-actions, .status-bar:not(:hover) .status-bar-item{
     opacity: 1;
@@ -493,4 +503,17 @@ a{
 
 .horizontal-tab-nav-item, .vertical-tab-nav-item{
     font-size: 14px !important;
+}
+
+/* sidebar-right */
+.search-result-file-match{
+    margin: 6px 0;
+    border-radius: 8px;
+    position: relative;
+    left: 1px;
+    padding: 10px 24px;
+    white-space: pre-wrap;
+    width: calc(100% - 20px);
+    background:var(--sidevar-right-background);
+    border: 1px solid var(--sidebar-right-border);
 }
