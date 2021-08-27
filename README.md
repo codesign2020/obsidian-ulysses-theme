@@ -6,6 +6,9 @@ A obsidian theme just like ulysses editor.
 
 ![theme](https://user-images.githubusercontent.com/58869528/131103196-a55ce426-203a-4c7e-955a-bab289636279.jpg)
 
+![dark](https://user-images.githubusercontent.com/58869528/131109156-cdbdde90-f626-4351-a507-1cebaff80b82.jpg)
+
+
 
 ## Inspiration
 
