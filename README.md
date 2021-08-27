@@ -1,2 +1,16 @@
 # obsidian-ulysses-theme
+
 A obsidian theme just like ulysses editor.
+
+![light-mode](https://user-images.githubusercontent.com/58869528/131102012-264e48d1-78fc-47d3-8abe-3d08e0ed620f.jpg)
+
+## Inspiration
+
+I like the ulysse editor so I made some work to a ulysses css for Obsidian.
+
+## Author
+
+Sherlock Lau, a UI/UX designer in China. This is my [blog](https://blog.codesign.top)
+
+Hope you like it:)
+
